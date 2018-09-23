@@ -1,0 +1,9 @@
+version: '3'
+services:
+  cassandra:
+    image: cassandra:3.11.3
+    ports:
+      - 9042:9042
+      - 9160:9160
+    volumes:
+      - ./docker/cassandra/data:/var/lib/cassandra
